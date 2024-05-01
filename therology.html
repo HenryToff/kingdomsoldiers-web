@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Soldiers</title>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+ 
+</head>
+<body>
+
+    <nav>
+        <img src="img/LOGO MAIN.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a class="active" href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="login" href="./login/login.html">LOGIN</i></a></li>
+            </ul>
+            <img id="menu-btn" src="img/menu.png" alt="">
+        </div>
+    </nav>
+
+    <section id="about-home">
+        <h2>Enroll Now, Diploma in Therology</h2>
+    </section>
+
+
+  <section id="course-inner">
+    <div class="overview">
+        <img class="course-img" src="img/back.jpg" alt="">
+        <div class="course-head">
+            <div class="c-name">
+                <h2>Diploma in Therology</h2>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Our faculty is dedicated schoolers and experienced practitioners who 
+                brings a wealth of expertation to the classroom. 
+                </p>
+            </div>
+            <span>$49.99</span>
+        </div>
+        <h3>Instructor</h3>
+        <div class="tutor">
+            <img src="img/team2.jpg" alt="">
+            <div class="tutor-det">
+                <h5>John Doe</h5>
+                <p>Web Developer</p>
+            </div>
+        </div>
+        <hr>
+        <h3>Course Overview</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aspernatur 
+            rerum veritatis dolorum cumque explicabo quidem tenetur. Cum ut nobis rem 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aspernatur 
+            rerum veritatis dolorum cumque explicabo quidem tenetur. Cum ut nobis rem <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aspernatur 
+            rerum veritatis dolorum cumque explicabo quidem tenetur. Cum ut nobis rem 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aspernatur 
+            rerum veritatis dolorum cumque explicabo quidem tenetur. Cum ut nobis rem 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aspernatur</p>
+            <hr>
+    
+        <h3>What you'll learn</h3>
+        <div class="learn">
+            <p><i class="fa fa-check-circle"></i>JavaScript for beginner</p>
+            <p><i class="fa fa-check-circle"></i> JavaScript for beginners course</p>
+            <p><i class="fa fa-check-circle"></i> JavaScript for beginners course</p>
+            <p><i class="fa fa-check-circle"></i> JavaScript for beginners course</p>
+            <p><i class="fa fa-check-circle"></i> JavaScript for beginners course</p>
+            <p><i class="fa fa-check-circle"></i> JavaScript for beginners course</p>
+        </div>
+    </div> 
+    <div class="enroll">
+        <h3>This Course Includes:</h3>
+            <p><i class="fa fa-book"></i> 
+             Bibliology * Eschatology * Evangelism * Hermeneutics * Christology * 
+             Soteriology * Mininsterial Ethics * Understanding Authority * * Demonology.</p>
+            <div class="enroll-btn">
+                <a class="blue" href="#">Enroll Courses</a>
+            </div>
+    </div>  
+  </section>
+
+
+  <footer>
+    <div class="footer-col">
+        <h3>Useful Links</h3>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Courses</li>
+        <li>Contact</li>
+    </div>
+    <div class="footer-col">
+        <h3>Courses</h3>
+        <li>Diploma in Ministry</li>
+        <li>Diploma in Therology</li>
+        <li>BA in Ministry Studies</li>
+        <li>Degree in Therology</li>
+    </div>
+    <div class="footer-col">
+        <h3>Contacts</h3>
+        <li>+233(0)243252130</li>
+        <li>+233(0)548540177</li>
+        <li>+233(0)203112777</li>
+        <li> +233(0)592919742</li>
+    </div>
+    <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us. we only send promo offers.</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Enter your Email Address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright | 2024 Kingdom Soldiers Mninisterial College</p>
+        <div class="pro-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+    <script>
+        $("#menu-btn").click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $("#menu-close").click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="login.css">
+
+   
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>LogIn</h1>
+        <form id="log-form">
+            <label>User Email</label>
+            <input type="email" name="email" id="email">
+            <label>User Password</label>
+            <input type="password" name="password" id="password">
+            <button type="button" class="login-btn" id="loginBtn">LOGIN</button>
+        </form>
+    </div> 
+
+      <!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>-->
+      <script type="module">
+
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+                import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+                import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+                const firebaseConfig = {
+                    apiKey: "AIzaSyDbZgUvCugFolhfw6ny77kQoL_D0_rJoQA",
+                    authDomain: "blog-post-5bc4e.firebaseapp.com",
+                    databaseURL: "https://blog-post-5bc4e-default-rtdb.firebaseio.com",
+                    projectId: "blog-post-5bc4e",
+                    storageBucket: "blog-post-5bc4e.appspot.com",
+                    messagingSenderId: "404222064466",
+                    appId: "1:404222064466:web:48a88b3b54fc2a2d88ac8b"
+                };
+                
+                const app = initializeApp(firebaseConfig);
+                const analytics = getAnalytics(app);
+                const auth = getAuth();
+
+                // loggin in as a user
+                loginBtn.addEventListener('click', (e) =>{
+                    e.preventDefault();
+
+                        var email = document.getElementById('email').value;
+                        var password = document.getElementById('password').value;
+
+                        signInWithEmailAndPassword(auth, email, password)
+                        .then(function(success){
+
+                        alert("User Loged In Successfully");  
+                         window.location.href = "/admin.html";
+
+                         document.getElementById('log-form').reset();
+                        
+                        })
+                        .catch(function(error){
+                        alert("Invalid! User")
+                        })     
+                })
+      </script>
+    
+</body>
+</html>
