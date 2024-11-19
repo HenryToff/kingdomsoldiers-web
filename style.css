@@ -272,7 +272,7 @@ nav .navigation ul li a.logout:hover{
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 #registration .form input{
-    margin: 15px 0;
+    margin: 10px 0;
     padding: 15px 20px;
     border: 1px solid rgb(84,40, 241);
     outline: none;
@@ -319,6 +319,9 @@ nav .navigation ul li a.logout:hover{
     background: #fafaf1;
     padding: 30px 10px;
 }
+#expert .expert-box .profile h6{
+    font-size: 1rem;
+}
 #expert .expert-box .profile img{
     width: 100%;
     width: 250px;
@@ -336,7 +339,7 @@ nav .navigation ul li a.logout:hover{
     margin-top: 10px;
 }
 .pro-links i{
-    padding: 10px 13px;
+    padding: 10px 10px;
     border: 1px solid rgb(21, 21, 100);
     cursor: pointer;
     transition: 0.3s ease;
@@ -815,6 +818,106 @@ footer .copyright .pro-links i:hover{
 }
 
 
+/*-------form------------*/
+
+
+#form{   
+    padding: 8vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#form .form{
+    width: 90%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+#form .form h4{
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+#form .form p{
+    color: #686875;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+#form .form .form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#form .form .form-row input{
+    width: 48%;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #a6a4b1;
+    outline: none;
+    padding: 10px 30px;
+    margin-bottom: 12px;
+}
+#form .form .form-col input{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #a6a4b1;
+    outline: none;
+    padding: 10px 30px;
+    margin-bottom: 12px;
+}
+#form .form .form-col select{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #a6a4b1;
+    outline: none;
+    padding: 10px 30px;
+    margin-bottom: 12px;
+}
+#form .form .form-col input,
+#form .form .form-col textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #a6a4b1;
+    outline: none;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+}
+#form .form .form-col input::placeholder,
+#form .form .form-row input::placeholder{
+    text-transform: uppercase;
+}
+#form .form button{
+    font-size: .9rem;
+    padding: 13px 25px;
+    background: rgb(21, 21, 100);
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+#form .form button:hover{
+    letter-spacing: 2px;
+    
+}
+
+
 /*-------Contact------------*/
 
 #contact-blog{
@@ -1009,6 +1112,9 @@ footer .copyright .pro-links i:hover{
     #contact{
         padding: 8vw 4vw;
     }
+    #form{
+        padding: 8vw 4vw;
+    }
     #contact .getin{
         width: 250px;
     }
@@ -1103,6 +1209,28 @@ footer .copyright .pro-links i:hover{
         width: 100%;
     }
     #contact .form .form-row input{
+        width: 100%;
+    }
+
+
+    #form {
+        padding: 8vw 4vw;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }  
+    
+    #form .form{
+        width: 100%;
+        padding: 40px 30px;
+    }
+    #form .form .form-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    #form .form .form-row input{
         width: 100%;
     }
     
