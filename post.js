@@ -35,7 +35,8 @@ const firebaseConfig = {
             firebase.database().ref('BlogPost/' +date).set({
                 ImgURL:downloadURL,
                 Title:title,
-                Page:page
+                Page:page,
+                date:date
                     
             });
                 alert('Blog Successfully Posted')
@@ -63,6 +64,7 @@ const firebaseConfig = {
             "<img src="+value.ImgURL+">"+
             "<div><h3>"+value.Title+"</h3>"+
             "<div><p>"+value.Page+"</p>"+
+            "<div><p>"+value.date+"</p>"+
             //"<button id='"+key+"' onclick='delete_post(this.id)'>Delete</button>"+
             "</div></div> <hr>"+post_div.innerHTML;
         }
