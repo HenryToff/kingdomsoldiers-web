@@ -21,7 +21,7 @@
             <ul>
                 <i id="menu-close" class="fa fa-times"></i>
                 <li><a href="login/register.html"> Register Here..</a></li>
-                <li><a href="blog.html" class="logout">LOG OUT</a></li>
+                <li><a href="blog.html" class="logout">LogOut</a></li>
             </ul>
             <img id="menu-btn" src="img/menu.png" alt="">
         </div>
@@ -36,16 +36,16 @@
             <form id="postform">
             <h4>Create your Blog Post</h4> 
             <div class="form-col">
-                <input type="date" id="date" placeholder="Post Date....">
+                <input type="date" id="date" placeholder="Date....">
             </div>     
             <div class="form-col">
+                <input type="text" id="title" placeholder="Title....">
+            </div>
+            <div class="form-col">
+                <textarea cols="30" rows="4" id="page" placeholder="Paragraph...."></textarea>
+            </div>
+            <div class="form-col">
                 <input type="file" id="image">
-            </div>
-            <div class="form-col">
-                <input type="text" id="title" placeholder="Blog Title...." >
-            </div>
-            <div class="form-col">
-                <textarea cols="30" rows="4" id="page" placeholder="Blog Paragraph...."></textarea>
             </div>
             <div class="form-col">
                <button type="button" onclick="postBtn()">Add Post</button>
