@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Soldiers</title>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+ 
+</head>
+<body>
+
+    <nav>
+        <img src="img/LOGO MAIN.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="login" href="./login/login.html">Login</i></a></li>
+            </ul>
+            <img id="menu-btn" src="img/menu.png" alt="">
+        </div>
+    </nav>
+
+    <section id="about-home">
+        <h2>Register Here!</h2>
+    </section>
+
+    <section id="form">
+        
+        <div class="form">
+            <h4>Personal Details</h4>
+            <p>FILL THIS FORM USING BLOCK WORDS ONLY!.</p>
+            <div class="form-col">
+                <input type="text" id="name" placeholder="Your full name..">
+            </div>
+            <div class="form-col">
+                <input type="date" id="birth" placeholder="Date of Birth..">
+            </div>
+            <div class="form-row">
+                <input type="text" id="residence" placeholder="Residence..">
+                <input type="number" id="number" placeholder="House Number..">
+            </div>
+            <div class="form-row">
+                <input type="text" id="phone" placeholder="Telephone..">
+                <input type="email" id="email" placeholder="Your Email..">
+            </div>
+            <div class="form-row">
+                <input type="text" id="occupation" placeholder="Occupation..">
+                <input type="text" id="position" placeholder="Position..">
+            </div>
+            <div class="form-col">
+                <select name="" id="marital">
+                    <option value="" selected>MARITAL STATUS....</option>
+                    <option value="">MARRIED</option>
+                    <option value="">SINGLE</option>
+                    <option value="">DIVORCE</option>
+                </select>
+            </div>
+            <div class="form-col">
+                <input type="text" id="church-num" placeholder="Spouse Phone Number..">
+            </div>
+            <div class="form-col">
+                <select name="" id="gender">
+                    <option value="" selected>GENDER....</option>
+                    <option value="">MALE</option>
+                    <option value="">FEMALE</option>
+                </select>
+            </div>
+            <div class="form-col">
+                <input type="file" id="pasport" placeholder="PASSPORT PICTURE..">
+            </div>
+          
+
+            <h4>Ministry Data</h4>
+
+            <div class="form-col">
+                <input type="text" id="church-name" placeholder="Name of Church..">
+                <input type="text" id="church-pas" placeholder="Name Head Pastor..">
+            </div>
+            <div class="form-row">
+                <input type="text" id="church-posi" placeholder="Position at Church..">
+                <input type="text" id="church-address" placeholder="Church Address..">
+            </div>        
+            <div class="form-col">
+                <input type="text" id="pastor-sign" placeholder="Head pastor Signature..">
+            </div>
+            <div class="form-col">
+                <select name="" id="in-ministry">
+                    <option value="" selected>ARE YOU YOU A MINISTRY ?</option>
+                    <option value="">YES</option>
+                    <option value="">NO</option>
+                </select>
+            </div>
+            <div class="form-col">
+                <input type="text" id="spirital-gift" placeholder="What are your spiritual gift..">
+                <input type="text" id="baptized" placeholder="Have you been baptized..">
+            </div>
+            <div class="form-col">
+                <select name="" id="tomgues">
+                    <option value="" selected>DO YOU SPEAK TONGUES ?</option>
+                    <option value="">YES</option>
+                    <option value="">NO</option>
+                </select>
+            </div>
+            <div class="form-col">
+                <input type="text" id="student-sign" placeholder="Student Signature..">
+            </div>
+            <div class="form-col">
+               <button type="button" onclick="sendEmail()">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>Useful Links</h3>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Courses</li>
+            <li>Contact</li>
+        </div>
+        <div class="footer-col">
+            <h3>Courses</h3>
+            <li>Diploma in Ministry</li>
+            <li>Diploma in Therology</li>
+            <li>BA in Ministry Studies</li>
+            <li>Degree in Therology</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers.</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Enter your Email Address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright | 2024 Kingdom Soldiers Mninisterial College</p>
+            <div class="pro-links">
+                <a href="https://web.facebook.com/profile.php?id=100071267415168"><i class="fa fa-facebook"></i></a>
+                <a href="https://wa.me/+233243252130"><i class="fa fa-whatsapp"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+          
+
+          function sendEmail(){
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+
+            let body = "Name : " + name + " <br/> Email : " + email + " <br/> Subject : " + subject + " <br/> Message : " + message;
+
+            Email.send({
+            SecureToken : "3fb83802-7af8-4df1-b35f-bf06ed30b825",
+            To : 'kingdomsoldiers101@gmail.com',
+            From : "kingdomsoldiers101@gmail.com",
+            Subject : "Message from Comtact Form",
+            Body : body
+            }).then(
+            message => alert('Mail Send Successfully')
+            );
+
+            }  
+    </script>
+
+
+
+
+    <script>
+        $("#menu-btn").click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $("#menu-close").click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+</body>
+</html>
